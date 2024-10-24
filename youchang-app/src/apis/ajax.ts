@@ -5,7 +5,7 @@ import useUserStore from '../store/useUserStore';
 const Axios = axios.create({
     baseURL:'/apis'
 })
-
+///////
 Axios.interceptors.request.use(function(config: InternalAxiosRequestConfig){
     // debugger;
     config.headers.token = useUserStore().token;
