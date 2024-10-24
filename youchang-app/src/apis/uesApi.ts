@@ -76,7 +76,7 @@ export function cartAddApi(data:CartObject){
     })
 }
 export const cartListApi = (uid:string) =>ajax({url:'api/cart/list/'+uid})
-// 修改购物车商品数量接口：userId,id,count;
+// 修改购物车商品数量接口：userId,id,count;//////
 export function cartModifyApi(data:any){
     return ajax({
         url:'api/cart/modify',
